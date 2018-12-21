@@ -28,13 +28,14 @@
       <div class="col-xs-3 product-item">
         <div class="product-content">
           <div class="top">
+            <div class="img">
               <a href="{{ route('products.show', ['product' => $product->id]) }}">
                 <img src="{{ $product->image_url }}" alt="">
               </a>
             </div>
             <div class="price"><b>￥</b>{{ $product->price }}</div>
             <div class="title">
-              <a href="{{ route('products.show', ['product' => $product->id]) }}">{{ $product->title }}</a>              
+              <a href="{{ route('products.show', ['product' => $product->id]) }}">{{ $product->title }}</a>
             </div>
           </div>
           <div class="bottom">
@@ -45,7 +46,7 @@
       </div>
       @endforeach
     </div>
-    <div class="pull-right">{{ $products->appends($filters)->render() }}</div>  <!-- 只需要添加这一行 -->
+<div class="pull-right">{{ $products->appends($filters)->render() }}</div>
   </div>
 </div>
 </div>
