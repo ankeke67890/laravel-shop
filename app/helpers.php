@@ -16,8 +16,8 @@ function get_db_config()
         return $db_config = [
             'connection' => env('DB_CONNECTION', 'mysql'),
             'host' => env('DB_HOST', '127.0.0.1'),
-            'database'  => env('DB_DATABASE', 'homestead'),
-            'username'  => env('DB_USERNAME', 'laravel-shop'),
+            'database'  => env('DB_DATABASE', 'laravel-shop'),
+            'username'  => env('DB_USERNAME', 'homestead '),
             'password'  => env('DB_PASSWORD', 'secret'),
         ];
     }
