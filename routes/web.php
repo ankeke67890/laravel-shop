@@ -11,7 +11,7 @@
 |
 */
 Route::get('/users', function() {
-    return App\User::all();
+    return App\Models\User::all();
 });
 Route::redirect('/', '/products')->name('root');
 Route::get('products', 'ProductsController@index')->name('products.index');
